@@ -1,0 +1,13 @@
+footer {
+    background-color: #161616;
+    color: white;
+    font-size: 18px;
+    height: 38px;
+    margin: auto;
+    text-align: center;
+    line-height: 38px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    direction: rtl;
+}
