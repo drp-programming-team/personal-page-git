@@ -1,78 +1,166 @@
 <!--  تماس با ما    -->
 <style>
     .infParent{
-    width:100%;
-    height:300px;
-    background-color:#666;
+        position: relative;
+        width:100%;
+        height:400px;
+        margin:5px 0;
+        padding:0 10px;
 }
-.containerImg{
-    float:right;
-    width:50%;
-    height:100%;
-}
-.imgUser{
-    width:100%;
-    height:100%;
-}
-.contactInfo{
-    float:left;
-    width:50%;
-    height:100%;
-    padding-top: 44px;
-}
-.infos{
-    width:100%;
-    height:80px;
-    color:darkblue;
-    font-size:16px;
-    padding: 5px 15px;
-}
-.infTitle{
-    float:left;
-    width:30px;
-    height:30px;
-    background-color:#fff;
-    margin-right:5px;
-    border-radius: 50%;
-    text-align: center;
-}
-.infAnsw{
-    width:calc(100% - 35px);
-    height: 80px;
+    .bgImage{
+        width: 100%;
+        height: 100%;
+        background-image: url('Images/book1.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0.8;
+        filter: brightness(0.9);
+    }
+    .infoPartParent{
+        max-width: 990px;
+        margin: 0 auto;
+    }
+    .contactForm{
+        float:left;
+        width:calc(55% - 20px);
+        max-width: 580px;
+        height:100%;
+        padding: 10px;
+        padding-left: 20px;
+    }
 
-}
-@media(max-width:480px){
-    .infParent{
-        height:200px;
-    }
-    .containerImg{
-        width:30%;
-    }
     .contactInfo{
-        width:70%;
-        padding-top: 0;
+        float:right;
+        width:45%;
+        height:100%;
+        padding: 50px;
+        padding-top: 10px;
+    }
+    .infos{
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        padding: 0 15px;
+        margin: 15px 0;
+        color: #fff;
+    }
+    .infTitle{
+        float: right;
+        width: 40px;
+        height: 40px;
+        background-color: #314152;
+        margin-left: 15px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 3px;
+    }
+    .infAnsw{
+        width: calc(100% - 55px);
+        height: 100%;
+        line-height: 38px;
+        text-align: right;
+        display: inline-block;
+        font-size: 18px;
+        direction: ltr;
+    }
+    .form-control{
+        color:#fff;
+    }
+    h3,.h3{
+        color:#fff;
+        }
+    .btnTheme{
+        background-color:#314152;
+        color:#fff;
+    }
+    .textArea{
+        min-height: 100px;
+    }
+    .form-group{
+        color:#fff;
     }
 
-}
+    @media(max-width:680px){
+        .infParent{
+            height: 370px;
+        }
+        .contactForm{
+            width:55%;
+        }
+        .contactInfo{
+            width: 45%;
+            padding: 0;
+            padding-top: 62px;
+        }
+        h3,.h3{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        }
+        @media(max-width:480px){
+            .infParent {
+                height: 570px;
+            }
+            .contactForm{
+                display: block;
+                width: 90%;
+                height: 360px;
+                margin: 0 auto;
+                padding: 10px;
+                float: none;
+            }
+            .contactInfo{
+                display: block;
+                width: 90%;
+                height: 178px;
+                float: none;
+                margin: 0 auto;
+                padding: 0;
+            }
+
+        }
 </style>
-<div class="container">
-    <div class="infParent">
-        <div class="containerImg">
-            <img src="https://image.cnbcfm.com/api/v1/image/104891709-Bill_Gates_the_co-Founder.jpg?v=1558120888&w=1400&h=950" class="imgUser"/>
-        </div>
-        <div class="contactInfo">
-            <div class="infos">
-                <span class="infTitle">fnt</span>
-                <span class="infAnsw">088899656768</span>
-            </div>
-            <div class="infos">
-                <span class="infTitle">fnt</span>
-                <span class="infAnsw">@abcdef</span>
-            </div>
-            <div class="infos">
-                <span class="infTitle">fnt</span>
-                <span class="infAnsw">@abcdef</span>
-            </div>
-        </div>
+<div class="infParent" id="contact">
+    <div class="bgImage"></div>
+    <div class="infoPartParent">
+            <form class="contactForm">
+                    <h3>با ما در ارتباط باشید</h3>
+                    <div class="form-group">
+                        <label for="email">ایمیل:</label>
+                        <input type="email" class="form-control" placeholder="ایمیل را وارد کنید">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">رمز:</label>
+                        <input type="password" class="form-control" placeholder="رمز را وارد نمایید">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control textArea" placeholder="تایپ کنید..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btnTheme col-md-3">ارسال</button>
+            </form>
+            <div class="contactInfo">
+                    <h3>راه های ارتباطی</h3>
+                    <div>
+                            <div class="infos">
+                                    <span class="infTitle"><span class="glyphicon glyphicon-cloud"></span></span>
+                                    <span class="infAnsw">09131234567</span>
+                                </div>
+                                <div class="infos">
+                                    <span class="infTitle"><span class="glyphicon glyphicon-pencil"></span></span>
+                                    <span class="infAnsw">@AliOmidi1122</span>
+                                </div>
+                                <div class="infos">
+                                    <span class="infTitle"><span class="glyphicon glyphicon-cloud"></span></span>
+                                    <span class="infAnsw">Ali.Omidi@yahoo.com</span>
+                                </div>
+                    </div>
+                </div>
     </div>
 </div>
