@@ -1,0 +1,25 @@
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+body {
+    direction: rtl;
+    height: 100%;
+    margin: auto;
+    overflow-y: auto;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.clr {
+    width: 100%;
+    clear: both;
+    height: 1px;
+}
