@@ -16,7 +16,7 @@
 	background-color: #15293e;
 }
 .navbar-inverse .navbar-toggle{
-	border-color: #fdce4b;
+	border-color: #fff;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
 	background-color: #15293e;
@@ -38,7 +38,7 @@
 	margin-bottom: 0;
 }
 .navbar-inverse .navbar-toggle .icon-bar{
-	background-color:#fdce4b;
+	background-color:#fff;
 }
 }
 @media (max-width: 767px){
@@ -58,7 +58,14 @@
 }
 
 }
-	
+input:active, input:focus, button:active, button:focus, textarea:active, textarea:focus {
+    -moz-outline-style: none;
+    -webkit-outline-style: none;
+    outline-style: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    outline: none;
+}
 
 	</style>
 <nav class="navbar navbar-inverse">
@@ -80,9 +87,10 @@
 	
 	<!-- Links -->
 	<ul class="nav navbar-nav">
-	<li class="active"><a href="#">خانه <span class="sr-only">(current)</span></a></li>
-	<li><a href="#aboutme">درباره من</a></li>
-	<li><a href="#contact">ارتباط با من</a></li>
+	<li class="active"><a >خانه <span class="sr-only">(current)</span></a></li>
+	<li ng-click="goSection('aboutme')" class="aboutme"><a >درباره من</a></li>
+	<li ng-click="goSection('contact')" class="contact"><a >ارتباط با من</a></li>
+	<li ng-click="goSection('gallery-content')" class="gallery-content"><a >  گالری</a></li>
 	</ul>
 	
 	<!-- Search -->
