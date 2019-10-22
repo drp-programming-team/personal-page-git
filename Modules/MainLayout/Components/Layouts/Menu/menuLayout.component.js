@@ -10,8 +10,6 @@ mainLayoutApp.component("menuLayout", {
                 }, 'slow');
         }
 
-        $('body').click(function () { 
-            $(".navbar-collapse").removeClass("in");    
-        });
+  
     }
 });
