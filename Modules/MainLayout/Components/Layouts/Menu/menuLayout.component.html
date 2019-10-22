@@ -1,47 +1,99 @@
 <style>
-	body {
-	  margin: 0;
-	  font-family: Arial, Helvetica, sans-serif;
+.navbar-brand{
+	float: left;
+}
+.navbar{
+	border-radius: 0; 
+}
+.navbar-inverse .navbar-brand{
+	color: #fff;
+}
+.navbar-inverse{
+	background-color: #314152;
+	border-color: #314152; 
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+	background-color: #15293e;
+}
+.navbar-inverse .navbar-toggle{
+	border-color: #fdce4b;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+	background-color: #15293e;
+}
+.navbar-inverse .navbar-nav > li > a{
+	color: #ccc;
+}
+@media (min-width: 768px){
+	.navbar-header{
+	float: left;
+}
+.navbar-collapse{
+	padding-right: 0px;
+    padding-left: 0px;
 	}
-	
-	.topnav {
-	  overflow: hidden;
-	  background-color: #333;
-	  height :52px;
-	}
-	
-	.topnav a {
-	  float: right;
-	  display: block;
-	  color: #f2f2f2;
-	  text-align: center;
-	  padding: 14px 16px;
-	  text-decoration: none;
-	  font-size: 17px;
-	}
-	
-	.topnav a:hover {
-	  background-color: #ddd;
-	  color: black;
-	  cursor: pointer;
-	}
-	
-	.topnav a.active {
-	  background-color: #4CAF50;
-	  color: white;
-	}
-	
-	.topnav .icon {
-	  display: none;
-	}
-	
 
+.navbar{
+	height: 52px;
+	margin-bottom: 0;
+}
+.navbar-inverse .navbar-toggle .icon-bar{
+	background-color:#fdce4b;
+}
+}
+@media (max-width: 767px){
+	.navbar{
+	margin-bottom: 0;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	background-color: #314152;
+}
+.navbar-toggle{
+	float: right;
+	margin-right: 15px;
+}
+
+}
 	
 
 	</style>
-<div class="topnav" id="myTopnav">
-	<a class="active">خانه</a>
-	<a >درباره من</a>
-	<a >ارتباط با من</a>
-
-  </div>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	
+	<!-- BRAND -->
+	<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#alignment-example" aria-expanded="false">
+	<span class="sr-only">Toggle navigation</span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="#">سایت آزمایشی</a>
+	</div>
+	
+	<!-- COLLAPSIBLE NAVBAR -->
+	<div class="collapse navbar-collapse" id="alignment-example">
+	
+	<!-- Links -->
+	<ul class="nav navbar-nav">
+	<li class="active"><a href="#">خانه <span class="sr-only">(current)</span></a></li>
+	<li><a href="#aboutme">درباره من</a></li>
+	<li><a href="#contact">ارتباط با من</a></li>
+	</ul>
+	
+	<!-- Search -->
+	<!--<form class="navbar-form navbar-right" role="search">
+	<div class="form-group">
+	<input type="text" class="form-control">
+	</div>
+	<button type="submit" class="btn btn-default">Search</button>
+	</form>-->
+	
+	</div>
+	
+	</div>
+	</nav>
