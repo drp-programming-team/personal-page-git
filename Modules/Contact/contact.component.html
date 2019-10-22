@@ -2,64 +2,84 @@
 <style>
     .infParent{
     width:100%;
-    height:300px;
+    height:400px;
     background-color:#666;
+    margin:5px 0;
 }
-.containerImg{
-    float:right;
-    width:50%;
-    height:100%;
-}
-.imgUser{
-    width:100%;
-    height:100%;
-}
-.contactInfo{
+.contactForm{
     float:left;
-    width:50%;
+    width:40%;
     height:100%;
-    padding-top: 44px;
+    padding: 10px;
+}
+
+.contactInfo{
+    float:right;
+    width:60%;
+    height:100%;
+    padding: 50px;
+    padding-top: 97px;
 }
 .infos{
-    width:100%;
-    height:80px;
-    color:darkblue;
-    font-size:16px;
-    padding: 5px 15px;
+    width: 100%;
+    height: 40px;
+    color: darkblue;
+    font-size: 16px;
+    padding: 0 15px;
+    margin: 15px 0;
 }
 .infTitle{
-    float:left;
-    width:30px;
-    height:30px;
-    background-color:#fff;
-    margin-right:5px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-color: #f0ad4e;
+    margin-right: 15px;
     border-radius: 50%;
     text-align: center;
 }
 .infAnsw{
-    width:calc(100% - 35px);
-    height: 80px;
-
+    width: calc(100% - 55px);
+    height: 100%;
+    line-height: 36px;
+    text-align: left;
+    display: inline-block;
 }
+
 @media(max-width:480px){
     .infParent{
-        height:200px;
+        height: 320px;
     }
-    .containerImg{
-        width:30%;
+    .contactForm{
+        width:55%;
     }
     .contactInfo{
-        width:70%;
-        padding-top: 0;
+        width: 45%;
+        padding: 0;
+        padding-top: 70px;
+    }
+    h3,.h3{
+        font-size: 20px;
+        margin-top: 10px;
     }
 
 }
 </style>
-<div class="container">
-    <div class="infParent">
-        <div class="containerImg">
-            <img src="https://image.cnbcfm.com/api/v1/image/104891709-Bill_Gates_the_co-Founder.jpg?v=1558120888&w=1400&h=950" class="imgUser"/>
-        </div>
+<div class="infParent" id="contact">
+            <form class="contactForm">
+                <h3>با ما در ارتباط باشید</h3>
+                <div class="form-group">
+                    <label for="email">ایمیل:</label>
+                    <input type="email" class="form-control" placeholder="ایمیل را وارد کنید">
+                </div>
+                <div class="form-group">
+                    <label for="password">رمز:</label>
+                    <input type="password" class="form-control" placeholder="رمز را وارد نمایید">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="تایپ کنید..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning col-md-3">ارسال</button>
+            </form>
         <div class="contactInfo">
             <div class="infos">
                 <span class="infTitle">fnt</span>
@@ -74,5 +94,4 @@
                 <span class="infAnsw">@abcdef</span>
             </div>
         </div>
-    </div>
 </div>
