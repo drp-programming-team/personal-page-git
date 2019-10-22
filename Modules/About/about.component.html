@@ -2,27 +2,25 @@
     .aboutbox{
         width: 100%;
         height:300px;
-       padding: 10px;
+      margin: 10px 0;
       
     }
     .Rightside{
         width: 20%;
-        height: 100%;
-        padding: 10px;
-        float: right;
-      
+    height: 100%;
+    padding: 10px;
+    float: right;
     }
     
     .leftside{
-        width: 80%;
-        height: 100%; 
-        float: left;
+        width: 50%;
+    height: 100%;
+    float: left;
+    padding: 10px;
     }
     .profileimg{
-        width: 300px;
-    height: 220px;
-    margin-top: 15px;
-    margin-right: 71px;
+        width: 30%;
+    height: 100%;
     float: right;
     }
     .titr{
@@ -30,7 +28,6 @@
         height: 40px;
         text-align:right;
         font-size: 20px;
-        margin-top: 15px;
         color: #314152;
     }
     .rowdetaile{
@@ -39,7 +36,7 @@
     overflow: hidden;
     }
     .txtBio{
-    width: 50px;
+    width: 70px;
     float: right;
     font-size: 13px;
     }
@@ -48,30 +45,55 @@
     font-size: 15px;
     width: calc(100% - 70px);
     }
-    .img{
+    
+    .profileimg img{
+        height: 100%;
         width: 100%;
     height: 100%;
     border: 2px solid #e7e5e5;
     padding: 4px;
     }
-    .img img{
-        width: 100%;
-        height: 100%;
-    }
     .Resumetext{
-    margin-right: 24px;
-    float: right;
-    width: calc(100% - 430px);
+        float: right;
     text-align: justify;
+    width: 100%;
+    line-height: 1.9;
     }
     .Resumetexttitr{
     font-size: 18px;
-    margin-top: 22px;
-    margin-bottom: 8px;
     color: #314152;
+    width: 100%;
+    height: 40px;
 
     }
-
+    .clr{
+        width: 100%;
+        height: 1px;
+        clear: both;
+    }
+@media (max-width: 767px){
+    .aboutbox{height: auto;}
+.Rightside{
+    display: block;
+    float: none;
+    width: 100%;
+    height: 250px;
+}
+.profileimg{
+    display: block;
+    float: none;
+    width: 100%;
+    height: 340px;
+}
+.leftside{
+    display: block;
+    float: none;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+}
 </style>
 
 
@@ -81,18 +103,28 @@
        <div class="titr">اطلاعات شخصی</div>
        <div  class="rowdetaile">
         <span class="txtBio">نام</span>
-        <span class="titleBi">علی امیدی</span>
+        <span class="titleBi">علی</span>
       
        </div>
+       <div  class="rowdetaile">
+            <span class="txtBio">تام خانوادگی</span>
+            <span class="titleBi">امیدی</span>
+          
+           </div>
       
            <div  class="rowdetaile">
-                <span class="txtBio">متولد</span>
+                <span class="txtBio">محل تولد</span>
                 <span class="titleBi">اصفهان</span>
               
                </div>
+               <div  class="rowdetaile">
+                    <span class="txtBio">متولد</span>
+                    <span class="titleBi">1365.01.01</span>
+                  
+                   </div>
 
                <div  class="rowdetaile">
-                    <span class="txtBio">مدرک تحصیلی</span>
+                    <span class="txtBio">تحصیلات</span>
                     <span class="titleBi"> مهندس کامپیوتر</span>
                   
                    </div>
@@ -101,23 +133,26 @@
                         <span class="titleBi"></span>اصفهان-زرین شهر </span>
                       
                        </div>
+                       
 
        </div>
+       <div class="profileimg">
+                    <img src="Images/dorof.jpg" >
+            
+        </div>
        <div class="leftside">
-            <div class="profileimg">
-                <div class="img">
-                        <img src="Images/dorof.jpg" >
-                </div>
-            </div>
             <div class="Resumetext  Resumetexttitr"> طراح و توسعه دهنده وب</div>
             <div class="Resumetext ">
                     وی در اکتبر ۱۹۸۴ در شهر سن پترزبورگ در کشور روسیه متولد شد، اما بیش&zwnj;تر دوران کودکی خود را در شهر تورین ایتالیا سپری کرد. پدر پاول والری دورف، زبان&zwnj;شناس بود و در ایتالیا کار می&zwnj;کرد.[۳][۴] از نوجوانی علاقه وافری به تکنولوژی داشت.
 
-                    او تحصیلات ابتدایی خود را در مدرسه ایتالیایی سپری کرد و بعد از اینکه در سال ۲۰۰۱ به روسیه برگشت، در دانشگاه سن پترزبورگ شروع به درس خواندن کرد و در سال ۲۰۰۶ در رشته علوم زبان فارغ&zwnj;التحصیل شد.
+                    در روز ۲۱ آوریل ۲۰۱۴، به عنوان مدیر عامل شرکت وی کی اخراج شد. بعدها دورف ادعا کرد که این شرکت به‌طور واضحی توسط متحدان ولادیمیر پوتین مورد نفوذ قرار گرفته بود. بعد از آن دورف روسیه را ترک کرد و اظهار داشت که او هیچ برنامه ای برای بازگشت ندارد و گفت این کشور در حال حاضر با کسب و کار اینترنتی سازگار نیست. پس از خروج از روسیه، او حق شهروندی در سنت کیتس و نویس، جزیره ای در دریای کارائیب را بدست آورد و بعد از آن توانست شرکت بعدی خود، تلگرام را تأسیس کند.
+
+                    این شرکت به‌طور رسمی در برلین تأسیس شد که یک سرویس پیام رسانی رمزگذاری شده می‌باشد.[۶] او تحصیلات ابتدایی خود را در مدرسه ایتالیایی سپری کرد و بعد از اینکه در سال ۲۰۰۱ به روسیه برگشت، در دانشگاه سن پترزبورگ شروع به درس خواندن کرد و در سال ۲۰۰۶ در رشته علوم زبان فارغ&zwnj;التحصیل شد.
         
             </div>
             
        </div>
+       <div class="clr"></div>
    </div>
    
 </div>
